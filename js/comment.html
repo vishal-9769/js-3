@@ -1,0 +1,301 @@
+/*     if(document.getElementById("ashtml").click()){
+        for ( let j = 0; j<noOfStudent.length;j++){
+            if(document.getElementById(j).click()){
+                assign.push(1);
+                //assign.cname="html";
+            }
+        }
+        localStorage.setItem(JSON.stringify(assign));
+    }
+ */
+
+
+    /* let table=document.getElementById("tab");
+    let btn1=document.createElement("input");
+    let btn2=document.createElement("input");
+    btn1.type="button";
+    btn1.className="btn btn-primary";
+    btn1.value="Assign";
+    btn2.type="button";
+    btn2.className="btn btn-primary";
+    btn2.value="Assign"; 
+    //let row = table.insertRow(-1);
+    let cell1;
+    let cell2;
+   // let j=1;
+    for ( let i = 0;i<noOfStudent.length;i++){
+        let row = table.insertRow(-1);
+    cell1 = row.insertCell(0);
+    //cell2 = row.insertCell(1);
+    cell3 = row.insertCell(1);
+    cell4 = row.insertCell(2);
+    cell1.innerHTML = noOfStudent[i];
+   // cell2.innerHTML =noOfStudent[i];
+    cell3.appendChild(btn1);
+    cell4.appendChild(btn2); 
+    j++ */
+    
+
+    //document.getElementById("as1").disabled = true; 
+   /*  for (let i=0 ; i < noOfStudent.length ; i++){
+        let  table = document.getElementById("tab").insertRow(i);
+    for (let j=0; j < colno ; j++){
+            let a=table.insertCell(j);
+            a.innerHTML="row-"+i+" "+"col-"+j;
+        }
+    } */
+
+ 
+/* function del(){
+    $("tbody").remove();
+    
+}  */
+ /* if(cname == "HTML"){
+        courseHtml.push("html")
+    }
+    localStorage.setItem("cousreNaem",JSON.stringify(courseHtml));
+ */
+
+   /*  document.getElementById("ashtml").addEventListener("click", function(){
+        console.log("html click");
+        for ( let j = 0; j<noOfStudent.length;j++){
+            document.getElementById(j).addEventListener("click", function(){
+                console.log("1");
+                assign.push(j);
+                assign.push("html");
+            }
+        );
+        localStorage.setItem("cid",JSON.stringify(assign));
+        }
+    
+    }); */
+
+
+
+    admin
+
+
+
+
+     <nav class="navbar navbar-expand-sm navbar-dark bg-primary stick-top">
+            <p class="navbar-brand">Rapidops</p>
+            <!--  <p id="user" class="d-inline clr"></p> -->
+            <a href="index.html" id="user" class="nav-item ml-auto clr"></a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="text-center">
+            Admin
+        </h1>
+        <hr>
+        <div class="container d-flex justify-content-between">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="image/h.png" alt="HTML">
+                <div class="card-body">
+                    <h5 class="card-title" id="cn">HTML</h5>
+                    <p class="card-text"></p>
+                    <!-- <a href="#" class="btn btn-primary">Assign Course</a> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="" id="ashtml">
+                        Assign Course
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">List of Student</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" onmouseover="creatTable()">
+                                   <!--  <button type="button" onclick="creatTable()" id="tb">Click</button> -->
+                                    <div id="new">
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="image/linux.png" alt="HTML">
+                <div class="card-body">
+                    <h5 class="card-title">Linux Basic</h5>
+                    <p class="card-text"></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="aslinux">
+                        Assign Course
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">List Of Student</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="image/git.png" alt="HTML">
+                <div class="card-body">
+                    <h5 class="card-title">Git</h5>
+                    <p class="card-text"></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="asgit">
+                        Assign Course
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">List of Student</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container d-flex justify-content-between">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="image/js.png" alt="HTML">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text"></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="asjs">
+                        Assign Course
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">List Of Student</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="image/react.png" width="100%" alt="HTML">
+                <div class="card-body">
+                    <h5 class="card-title">React</h5>
+                    <p class="card-text"></p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="asreact">
+                        Assign Course
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">List Of Student</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="image/node.png" alt="HTML">
+                <div class="card-body">
+                    <h5 class="card-title">NodeJs</h5>
+                    <p class="card-text"></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="asnode">
+                        Assign Course
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">List Of Student</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
