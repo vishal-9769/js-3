@@ -71,7 +71,7 @@ const validateAdmin = () => {
    
     if (storeunameAdmin.includes(uname) && storepassAdmin.includes(password) && logintype.includes(type)){
         sessionStorage.setItem("a",uname);
-        window.location.assign("admin.html");
+        window.location.assign("newadmin.html");
     }
      
     else{

@@ -45,3 +45,9 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  .card {
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+    }
