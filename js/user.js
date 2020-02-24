@@ -8,6 +8,7 @@ document.getElementById("user").innerHTML=u;
 
 
 const apiResult = JSON.parse(localStorage.getItem("assignedCourse"));
+//const course= JSON.parse(localStorage.getItem(""))
   //let uname="rushi"; 
   console.log(apiResult);
   let container = document.getElementById('accordion');
@@ -30,9 +31,9 @@ const apiResult = JSON.parse(localStorage.getItem("assignedCourse"));
   
       <div id="collapse-${idx}" class="collapse show" aria-labelledby="heading-${idx}" data-parent="#accordion">
         <div class="card-body">
-          <button class="btn btn-primary">
+          <a class="btn btn-primary" href=${}>
           Start Course
-                          </button>
+                          </a>
         </div>
       </div>
     </div>

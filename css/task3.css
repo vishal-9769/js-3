@@ -1,0 +1,13 @@
+
+.task3 div{
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 2em;
+    margin:.5em .5em;
+    height: 125px;
+   /* width: 170px;*/
+    border: black 2px solid;
+}
+.task3 p{
+    font-size: 10px;
+}
