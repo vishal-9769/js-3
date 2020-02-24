@@ -31,7 +31,7 @@ const apiResult = JSON.parse(localStorage.getItem("assignedCourse"));
   
       <div id="collapse-${idx}" class="collapse show" aria-labelledby="heading-${idx}" data-parent="#accordion">
         <div class="card-body">
-          
+          <a type="button" class="btn btn-primary text-white" href="#">
           Start Course
                           </a>
         </div>
