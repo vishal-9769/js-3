@@ -1,19 +1,19 @@
 alert("click me");
-changeBox2Color()
+changeColorOfBox2();
 function box1Func(){
     bx3 = document.getElementById("box3");
-    bx3.firstElementChild.innerHTML="Oops! Somethings wrong.";
+     bx3.firstElementChild.innerHTML="Oops! Somethings wrong.";
 }
 
 
-function changeBox2Color(){
-    console.log("changeBox2Color")
+function changeColorOfBox2(){
+    //console.log("changeBox2Color")
     let a=0;
-    changeCol2();
+    changeColor();
 }
 
-function changeCol2(){
-    console.log("changeCol2")
+function changeColor(){
+    //console.log("changeColor")
     let colors = ['yellow','orange','blue'];
     let a=0;
     let tm=3000;
@@ -43,22 +43,22 @@ document.onkeydown = function(event){
     let reverse=false;
     if(event.keyCode == 38 || event.keyCode == 39){
         console.log(event.key)
-        changeCol4(5000,reverse);
+        changeColor4sec(5000,reverse);
     }
     else if(event.keyCode == 37 || event.keyCode == 40){
         console.log(event.key)
         reverse=true;
-        changeCol4(5000,reverse);
+        changeColor4sec(5000,reverse);
     }
     else{
 
     }
 }
-let t1,t2;
-function changeCol4(tm,rev){
-    if(t1!=null && t2!=null){
-    clearTimeout(t1);
-    clearTimeout(t2);
+let timerId1,timerId2;
+function changeColor4sec(timer,rev){
+    if(timerId1!=null && timerId2!=null){
+    clearTimeout(timerId1);
+    clearTimeout(timerId2);
     }
     
     let colors = ['lightcoral','greenyellow','cyan','royalblue','violet','rosybrown','chocolate'];
@@ -67,9 +67,9 @@ function changeCol4(tm,rev){
     if (rev==true){
         colors=colors.reverse();
     }
- t1 = setTimeout(function run() {
+ timerId1 = setTimeout(function run() {
     if(i%6 != 0){
-        tm=5000;
+        timer=5000;
         let bx4=document.getElementById("box4");
         bx4.style.transitionProperty='background-color';
         bx4.style.transitionDuration='1s';
@@ -80,9 +80,9 @@ function changeCol4(tm,rev){
         }
     }
     else {
-        tm=1;
+        timer=1;
     }
     (i++)
- t2=setTimeout(run, tm);
+ timerId2=setTimeout(run, timer);
 }, 1);
 }
